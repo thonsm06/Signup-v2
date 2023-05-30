@@ -1,6 +1,7 @@
 :root {
     --paddingLeft: 50px;
     box-sizing: border-box;
+    font-weight: bold;
 }
 body {
     background-color: rgb(250, 250, 250);
@@ -12,7 +13,7 @@ body {
 }
 
 .left {
-    width: 400px;
+    width: 30%;
     background-color: rgba(0, 0, 0, 0.1);
 }
 .right {
@@ -30,18 +31,20 @@ body {
     box-shadow: 4px 4px 4px rgb(218, 218, 218);
     padding: 20px var(--paddingLeft);
 }
-.columns {
+.column {
     display: flex;
-    gap: 70px;
-}
-.left-column,
-.right-column {
-    display:flex;
     flex-direction: column;
-    gap: 1.1rem;
+    gap: 1rem;
+    font-size: 12px;
 }
 
-.columns:nth-child(2) div {
+.row {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+}
+
+.field {
     display: flex;
     flex-direction: column;
 }
