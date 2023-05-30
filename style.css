@@ -1,0 +1,61 @@
+:root {
+    --paddingLeft: 50px;
+    box-sizing: border-box;
+}
+body {
+    background-color: rgb(250, 250, 250);
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    padding: 0;
+    margin: 0;
+}
+
+.left {
+    width: 400px;
+    background-color: rgba(0, 0, 0, 0.1);
+}
+.right {
+    flex: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.header {
+    padding-left: var(--paddingLeft);
+}
+.container {
+    background-color: white;
+    box-shadow: 4px 4px 4px rgb(218, 218, 218);
+    padding: 20px var(--paddingLeft);
+}
+.columns {
+    display: flex;
+    gap: 70px;
+}
+.left-column,
+.right-column {
+    display:flex;
+    flex-direction: column;
+    gap: 1.1rem;
+}
+
+.columns:nth-child(2) div {
+    display: flex;
+    flex-direction: column;
+}
+
+button {
+    margin: 20px var(--paddingLeft) 20px;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 7px;
+    background-color: rgb(46, 45, 44);
+    color: white;
+    font-weight: bold;
+}
+
+p:last-child {
+    padding-left: var(--paddingLeft);
+}
